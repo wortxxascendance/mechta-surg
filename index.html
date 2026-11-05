@@ -166,13 +166,14 @@ section{padding:84px 0;scroll-margin-top:68px}
 
 /* врачи */
 .docs{background:var(--card)}
-.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.docs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .doc{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px}
 .doc-h{display:flex;gap:14px;align-items:center}
 .doc .ava{width:58px;height:58px;border-radius:50%;background:var(--teal);color:#f2e3c6;display:grid;place-items:center;font:600 20px var(--serif);flex:none}
 .doc h3{font-size:20px}
 .doc .role{font-size:14px;color:var(--teal);font-weight:600;line-height:1.35;margin-top:3px}
 .doc q{quotes:"«" "»";color:var(--ink2);font-size:15px;flex:1}
+.doc .about{color:var(--ink2);font-size:15px;flex:1}
 .doc .src{font-size:13px;color:var(--mut)}
 .doc .btn{min-height:46px}
 .team-ph{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
@@ -304,7 +305,6 @@ section{padding:84px 0;scroll-margin-top:68px}
   .trust,.facts{grid-template-columns:1fr 1fr}
   .imp-grid,.docs-grid{grid-template-columns:1fr 1fr}
   .imp-grid .ic:last-child{grid-column:1/-1}
-  .docs-grid .doc:last-child{grid-column:1/-1}
 }
 @media (max-width:900px){
   section{padding:62px 0}
@@ -489,6 +489,7 @@ section{padding:84px 0;scroll-margin-top:68px}
       <article class="doc rv-in"><div class="doc-h"><div class="ava" aria-hidden="true">АН</div><div><h3>Ахмеджанова Наргиза Абдушукуровна</h3><div class="role">Стоматолог: лечение и&nbsp;удаление</div></div></div><q>Думала, что нужно удалять зуб, но доктор сделала снимок и сказала, что мы можем полностью сохранить мой зуб</q><span class="src">Упоминают в 15 отзывах в 2ГИС</span><button class="btn" type="button" data-doc="Ахмеджанова Н. А.">Записаться к врачу</button></article>
       <article class="doc rv-in"><div class="doc-h"><div class="ava" aria-hidden="true">РИ</div><div><h3>Рамазанов Ислам Нухтарпашаевич</h3><div class="role">Хирург-имплантолог: импланты и&nbsp;удаление</div></div></div><q>Спасибо хирургу за одномоментную имплантацию, всё успешно, импланты прижились</q><span class="src">Упоминают в 8 отзывах в 2ГИС</span><button class="btn" type="button" data-doc="Рамазанов И. Н.">Записаться к врачу</button></article>
       <article class="doc rv-in"><div class="doc-h"><div class="ava" aria-hidden="true">КН</div><div><h3>Красовская Наталья Анатольевна</h3><div class="role">Стоматолог-ортопед: коронки и&nbsp;протезы</div></div></div><q>Уже больше 20 лет делаю зубы только у неё</q><span class="src">Упоминают в 9 отзывах в 2ГИС</span><button class="btn" type="button" data-doc="Красовская Н. А.">Записаться к врачу</button></article>
+      <article class="doc rv-in"><div class="doc-h"><div class="ava" aria-hidden="true">ДС</div><div><h3>Данилов Сергей Дмитриевич</h3><div class="role">Стоматолог: взрослые и&nbsp;дети</div></div></div><p class="about">Работает более 20&nbsp;лет.</p><button class="btn" type="button" data-doc="Данилов С. Д.">Записаться к врачу</button></article>
     </div>
     <div class="team-ph">
       <img class="rv-in" src="img/doc2.jpg" alt="Врач клиники во время лечения" width="1100" height="1400" loading="lazy">
@@ -578,7 +579,7 @@ section{padding:84px 0;scroll-margin-top:68px}
       <h3>Запись на приём</h3>
       <div class="fp" id="fPlan" hidden><b>Ваш план</b><ul id="fPlanList"></ul><div class="t"><span>Ориентир по прайсу</span><span id="fPlanT"></span></div><a href="#prices">Изменить план</a></div>
       <div id="reasonBox"><div class="lbl" id="rLbl">С чем обращаетесь</div><div class="chips" id="reasons" role="radiogroup" aria-labelledby="rLbl"></div></div>
-      <label class="fld">Врач<select id="doc"><option value="">Любой свободный</option><option>Ахмеджанова Н. А.</option><option>Рамазанов И. Н.</option><option>Красовская Н. А.</option></select></label>
+      <label class="fld">Врач<select id="doc"><option value="">Любой свободный</option><option>Ахмеджанова Н. А.</option><option>Рамазанов И. Н.</option><option>Красовская Н. А.</option><option>Данилов С. Д.</option></select></label>
       <div><div class="lbl">День</div><div class="days" id="days"></div></div>
       <div id="slotBox"><div class="lbl">Время</div><div class="slots" id="slots"></div></div>
       <div class="row2">
